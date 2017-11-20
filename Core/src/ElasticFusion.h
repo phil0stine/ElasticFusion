@@ -252,7 +252,7 @@ class ElasticFusion
    */
   EFUSION_API void getModel(std::vector<Eigen::Vector4f>& xyz,
                             std::vector<Eigen::Vector4f>& normalr,
-                            std::vector<Eigen::Vector3i>& color);
+                            std::vector<Eigen::Vector4i>& color);
   
         /**
          * Renders a normalised view of the input raw depth for displaying as an OpenGL texture
