@@ -245,7 +245,7 @@ class ElasticFusion
         /**
          * Saves out a .ply mesh file of the current model
          */
-  EFUSION_API void savePly(const std::string& filename);
+  EFUSION_API void savePly(const std::string& filename = "");
 
   /**
    * Return the current model

@@ -715,9 +715,10 @@ void ElasticFusion::normaliseDepth(const float & minVal, const float & maxVal)
   computePacks[ComputePack::NORM]->compute(textures[GPUTexture::DEPTH_RAW]->texture, &uniforms);
 }
 
-void ElasticFusion::savePly(const std::string& filename)
+void ElasticFusion::savePly(const std::string& tfilename)
 {
   // Open file
+  std::string filename = (tfilename.empty()) ? saveFilename + ".ply" : tfilename;
   std::ofstream fs;
   fs.open (filename.c_str ());
 
