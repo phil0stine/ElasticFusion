@@ -245,8 +245,15 @@ class ElasticFusion
         /**
          * Saves out a .ply mesh file of the current model
          */
-        EFUSION_API void savePly();
+  EFUSION_API void savePly(const std::string& filename);
 
+  /**
+   * Return the current model
+   */
+  EFUSION_API void getModel(std::vector<Eigen::Vector4f>& xyz,
+                            std::vector<Eigen::Vector4f>& normalr,
+                            std::vector<Eigen::Vector3i>& color);
+  
         /**
          * Renders a normalised view of the input raw depth for displaying as an OpenGL texture
          * (this is stored under textures[GPUTexture::DEPTH_NORM]
