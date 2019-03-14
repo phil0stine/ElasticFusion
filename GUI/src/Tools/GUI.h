@@ -45,6 +45,7 @@ class GUI
 
             windowParams.Set("SAMPLE_BUFFERS", 0);
             windowParams.Set("SAMPLES", 0);
+						windowParams.Set("scheme", "headless");
 
             pangolin::CreateWindowAndBind("Main", width, height, windowParams);
 
